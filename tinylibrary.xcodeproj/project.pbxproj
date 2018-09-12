@@ -17,6 +17,7 @@
 		66814DD32146EB7E00A82A4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66814DD22146EB7E00A82A4D /* main.m */; };
 		66814DDE2146F08A00A82A4D /* temp_icon_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 66814DDC2146F08A00A82A4D /* temp_icon_large.png */; };
 		66814DE12146F6D900A82A4D /* icon_180.png in Resources */ = {isa = PBXBuildFile; fileRef = 66814DE02146F6D900A82A4D /* icon_180.png */; };
+		66814DE42148ACC000A82A4D /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66814DE22148ACC000A82A4D /* TextViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,9 @@
 		66814DD22146EB7E00A82A4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66814DDC2146F08A00A82A4D /* temp_icon_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = temp_icon_large.png; sourceTree = "<group>"; };
 		66814DE02146F6D900A82A4D /* icon_180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_180.png; sourceTree = "<group>"; };
+		66814DE22148ACC000A82A4D /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
+		66814DE32148ACC000A82A4D /* DocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentViewController.h; sourceTree = "<group>"; };
+		66814DE52148ACC900A82A4D /* TextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,9 @@
 				66814DC42146EB7D00A82A4D /* DocumentViewController.m */,
 				66814DC62146EB7D00A82A4D /* Document.h */,
 				66814DC72146EB7D00A82A4D /* Document.m */,
+				66814DE32148ACC000A82A4D /* DocumentViewController.h */,
+				66814DE52148ACC900A82A4D /* TextViewController.h */,
+				66814DE22148ACC000A82A4D /* TextViewController.m */,
 				66814DC92146EB7D00A82A4D /* Main.storyboard */,
 				66814DCC2146EB7E00A82A4D /* Assets.xcassets */,
 				66814DCE2146EB7E00A82A4D /* LaunchScreen.storyboard */,
@@ -170,6 +177,7 @@
 				66814DD32146EB7E00A82A4D /* main.m in Sources */,
 				66814DC82146EB7D00A82A4D /* Document.m in Sources */,
 				66814DC22146EB7D00A82A4D /* DocumentBrowserViewController.m in Sources */,
+				66814DE42148ACC000A82A4D /* TextViewController.m in Sources */,
 				66814DC52146EB7D00A82A4D /* DocumentViewController.m in Sources */,
 				66814DBF2146EB7D00A82A4D /* AppDelegate.m in Sources */,
 			);

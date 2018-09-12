@@ -9,6 +9,7 @@
 #import "DocumentBrowserViewController.h"
 #import "Document.h"
 #import "DocumentViewController.h"
+#import "TextViewController.h"
 
 @interface DocumentBrowserViewController () <UIDocumentBrowserViewControllerDelegate>
 
@@ -69,9 +70,19 @@
 
 - (void)presentDocumentAtURL:(NSURL *)documentURL {
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    DocumentViewController *documentViewController = [storyBoard instantiateViewControllerWithIdentifier:@"DocumentViewController"];
-    documentViewController.document = [[Document alloc] initWithFileURL:documentURL];
-    [self presentViewController:documentViewController animated:YES completion:nil];
+    
+    // IF TEXT FILE
+    if ([documentURL.pathExtension isEqual:@"txt"]){
+        TextViewController *textViewController = [storyBoard instantiateViewControllerWithIdentifier:@"TextViewController"];
+        textViewController.document = [[Document alloc] initWithFileURL:documentURL];
+        [self presentViewController:textViewController animated:NO completion:nil];
+    } else {
+    // IF NOT TEXT FILE
+        printf("Non-text extension: %s", [documentURL.pathExtension UTF8String]);
+        DocumentViewController *documentViewController = [storyBoard instantiateViewControllerWithIdentifier:@"DocumentViewController"];
+        documentViewController.document = [[Document alloc] initWithFileURL:documentURL];
+        [self presentViewController:documentViewController animated:YES completion:nil];
+    }
 }
 
 @end

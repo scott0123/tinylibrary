@@ -1,5 +1,5 @@
 //
-//  Document.h
+//  TextViewController.h
 //  tinylibrary
 //
 //  Created by ScottLiu on 9/10/18.
@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Document.h"
 
-@interface Document : UIDocument
+@interface TextViewController : UIViewController
 
-@property (strong) NSString *contents;
+@property (strong) Document *document;
 
 @end
