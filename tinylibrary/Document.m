@@ -20,7 +20,18 @@
 - (BOOL)loadFromContents:(id)contents ofType:(NSString *)typeName error:(NSError **)errorPtr {
     // Load your document from contents
     if([typeName isEqual: @"public.plain-text"]){
-        self.contents = [NSString stringWithUTF8String:[contents bytes]];
+        // this is legacy code that doesnt take into account different text encoding schemes
+        //self.contents = [[NSString alloc] initWithData:contents encoding:NSUTF8StringEncoding];
+        
+        // we shall take the first 128 bytes from the content and analyze it to see what encoding the text is using
+        NSData* subdata = nil;
+        unsigned int subdata_max_range = 128;
+        if([contents length] < 128) {
+            subdata_max_range = (unsigned int)[contents length];
+        }
+        subdata = [contents subdataWithRange:NSMakeRange(0, subdata_max_range)];
+        NSStringEncoding encoding = [NSString stringEncodingForData:subdata encodingOptions:nil convertedString:nil usedLossyConversion:0];
+        self.contents = [[NSString alloc] initWithData:contents encoding:encoding];
     } else {
         printf("Unexpected type: %s\n", [typeName UTF8String]);
     }
