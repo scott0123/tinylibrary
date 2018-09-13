@@ -88,33 +88,50 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgK-WI-FSe">
-                                <rect key="frame" x="320" y="0.0" width="47" height="36"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <rect key="frame" x="328" y="631" width="47" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
                                     <action selector="donePressed" destination="jHM-J9-tFx" eventType="touchUpInside" id="yV0-q3-15n"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Please wait while your text file is being loaded!" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxG-9y-gqy">
-                                <rect key="frame" x="0.0" y="31" width="375" height="636"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="636"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Night mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vj-yC-wzt">
+                                <rect key="frame" x="142" y="639" width="90" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yJG-5A-EFs">
+                                <rect key="frame" x="240" y="634" width="51" height="31"/>
+                                <connections>
+                                    <action selector="NightModeChanged:" destination="jHM-J9-tFx" eventType="valueChanged" id="sMa-3X-Klu"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="GxG-9y-gqy" firstAttribute="top" secondItem="VgK-WI-FSe" secondAttribute="bottom" constant="-5" id="JIA-Qz-uF6"/>
-                            <constraint firstItem="GxG-9y-gqy" firstAttribute="leading" secondItem="God-hO-GYX" secondAttribute="leading" id="OBO-R3-QeL"/>
-                            <constraint firstItem="God-hO-GYX" firstAttribute="trailing" secondItem="VgK-WI-FSe" secondAttribute="trailing" constant="8" id="OOr-Yv-ZrQ"/>
-                            <constraint firstItem="GxG-9y-gqy" firstAttribute="bottom" secondItem="God-hO-GYX" secondAttribute="bottom" id="PnQ-aD-eut"/>
-                            <constraint firstItem="VgK-WI-FSe" firstAttribute="top" secondItem="EcF-a5-TZC" secondAttribute="top" id="ZpC-e2-2rO"/>
-                            <constraint firstItem="GxG-9y-gqy" firstAttribute="trailing" secondItem="God-hO-GYX" secondAttribute="trailing" id="hc0-Bc-0fW"/>
+                            <constraint firstItem="God-hO-GYX" firstAttribute="bottom" secondItem="7vj-yC-wzt" secondAttribute="bottom" constant="7" id="4pj-MJ-OSQ"/>
+                            <constraint firstItem="VgK-WI-FSe" firstAttribute="top" secondItem="GxG-9y-gqy" secondAttribute="bottom" constant="-5" id="TFo-lO-J2R"/>
+                            <constraint firstItem="GxG-9y-gqy" firstAttribute="top" secondItem="EcF-a5-TZC" secondAttribute="top" id="Wz5-fj-IZw"/>
+                            <constraint firstItem="VgK-WI-FSe" firstAttribute="trailing" secondItem="God-hO-GYX" secondAttribute="trailing" id="b9P-m8-zyU"/>
+                            <constraint firstItem="GxG-9y-gqy" firstAttribute="trailing" secondItem="God-hO-GYX" secondAttribute="trailing" id="cJt-J5-brW"/>
+                            <constraint firstItem="yJG-5A-EFs" firstAttribute="centerY" secondItem="7vj-yC-wzt" secondAttribute="centerY" id="dS3-po-Lqb"/>
+                            <constraint firstItem="GxG-9y-gqy" firstAttribute="leading" secondItem="God-hO-GYX" secondAttribute="leading" id="o8E-8K-12K"/>
+                            <constraint firstItem="7vj-yC-wzt" firstAttribute="centerX" secondItem="EcF-a5-TZC" secondAttribute="centerX" id="pux-SB-HeD"/>
+                            <constraint firstItem="VgK-WI-FSe" firstAttribute="bottom" secondItem="God-hO-GYX" secondAttribute="bottom" id="qfG-XK-g1k"/>
+                            <constraint firstItem="yJG-5A-EFs" firstAttribute="leading" secondItem="7vj-yC-wzt" secondAttribute="trailing" constant="8" id="xzU-er-sjO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="God-hO-GYX"/>
                     </view>
                     <connections>
                         <outlet property="contentView" destination="GxG-9y-gqy" id="4UI-N5-4E4"/>
+                        <outlet property="nightModeLabel" destination="7vj-yC-wzt" id="URh-O8-Hee"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VY4-71-1zv" userLabel="First Responder" sceneMemberID="firstResponder"/>

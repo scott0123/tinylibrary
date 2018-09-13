@@ -15,9 +15,17 @@
 		66814DCD2146EB7E00A82A4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66814DCC2146EB7E00A82A4D /* Assets.xcassets */; };
 		66814DD02146EB7E00A82A4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66814DCE2146EB7E00A82A4D /* LaunchScreen.storyboard */; };
 		66814DD32146EB7E00A82A4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66814DD22146EB7E00A82A4D /* main.m */; };
-		66814DDE2146F08A00A82A4D /* temp_icon_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 66814DDC2146F08A00A82A4D /* temp_icon_large.png */; };
-		66814DE12146F6D900A82A4D /* icon_180.png in Resources */ = {isa = PBXBuildFile; fileRef = 66814DE02146F6D900A82A4D /* icon_180.png */; };
 		66814DE42148ACC000A82A4D /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66814DE22148ACC000A82A4D /* TextViewController.m */; };
+		66814DEB214971C100A82A4D /* tinylibrary_icon83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66814DE6214971C100A82A4D /* tinylibrary_icon83.5@2x.png */; };
+		66814DEC214971C100A82A4D /* tinylibrary_icon76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66814DE7214971C100A82A4D /* tinylibrary_icon76@2x.png */; };
+		66814DED214971C100A82A4D /* tinylibrary_icon1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 66814DE8214971C100A82A4D /* tinylibrary_icon1024.png */; };
+		66814DEE214971C100A82A4D /* tinylibrary_icon60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66814DE9214971C100A82A4D /* tinylibrary_icon60@3x.png */; };
+		66814DEF214971C100A82A4D /* tinylibrary_icon60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66814DEA214971C100A82A4D /* tinylibrary_icon60@2x.png */; };
+		66814DF42149725700A82A4D /* tinylibrary_icon20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66814DF02149725600A82A4D /* tinylibrary_icon20@2x.png */; };
+		66814DF52149725700A82A4D /* tinylibrary_icon20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66814DF12149725600A82A4D /* tinylibrary_icon20@3x.png */; };
+		66814DF62149725700A82A4D /* tinylibrary_icon29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66814DF22149725600A82A4D /* tinylibrary_icon29@3x.png */; };
+		66814DF72149725700A82A4D /* tinylibrary_icon29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66814DF32149725600A82A4D /* tinylibrary_icon29@2x.png */; };
+		66814DF9214972A600A82A4D /* tinylibrary_icon40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66814DF8214972A600A82A4D /* tinylibrary_icon40@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,11 +43,19 @@
 		66814DCF2146EB7E00A82A4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66814DD12146EB7E00A82A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66814DD22146EB7E00A82A4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		66814DDC2146F08A00A82A4D /* temp_icon_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = temp_icon_large.png; sourceTree = "<group>"; };
-		66814DE02146F6D900A82A4D /* icon_180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_180.png; sourceTree = "<group>"; };
 		66814DE22148ACC000A82A4D /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
 		66814DE32148ACC000A82A4D /* DocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentViewController.h; sourceTree = "<group>"; };
 		66814DE52148ACC900A82A4D /* TextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		66814DE6214971C100A82A4D /* tinylibrary_icon83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tinylibrary_icon83.5@2x.png"; sourceTree = "<group>"; };
+		66814DE7214971C100A82A4D /* tinylibrary_icon76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tinylibrary_icon76@2x.png"; sourceTree = "<group>"; };
+		66814DE8214971C100A82A4D /* tinylibrary_icon1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tinylibrary_icon1024.png; sourceTree = "<group>"; };
+		66814DE9214971C100A82A4D /* tinylibrary_icon60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tinylibrary_icon60@3x.png"; sourceTree = "<group>"; };
+		66814DEA214971C100A82A4D /* tinylibrary_icon60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tinylibrary_icon60@2x.png"; sourceTree = "<group>"; };
+		66814DF02149725600A82A4D /* tinylibrary_icon20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tinylibrary_icon20@2x.png"; sourceTree = "<group>"; };
+		66814DF12149725600A82A4D /* tinylibrary_icon20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tinylibrary_icon20@3x.png"; sourceTree = "<group>"; };
+		66814DF22149725600A82A4D /* tinylibrary_icon29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tinylibrary_icon29@3x.png"; sourceTree = "<group>"; };
+		66814DF32149725600A82A4D /* tinylibrary_icon29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tinylibrary_icon29@2x.png"; sourceTree = "<group>"; };
+		66814DF8214972A600A82A4D /* tinylibrary_icon40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tinylibrary_icon40@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +112,16 @@
 		66814DD92146F04300A82A4D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				66814DE02146F6D900A82A4D /* icon_180.png */,
-				66814DDC2146F08A00A82A4D /* temp_icon_large.png */,
+				66814DF02149725600A82A4D /* tinylibrary_icon20@2x.png */,
+				66814DF12149725600A82A4D /* tinylibrary_icon20@3x.png */,
+				66814DF32149725600A82A4D /* tinylibrary_icon29@2x.png */,
+				66814DF22149725600A82A4D /* tinylibrary_icon29@3x.png */,
+				66814DF8214972A600A82A4D /* tinylibrary_icon40@2x.png */,
+				66814DEA214971C100A82A4D /* tinylibrary_icon60@2x.png */,
+				66814DE9214971C100A82A4D /* tinylibrary_icon60@3x.png */,
+				66814DE7214971C100A82A4D /* tinylibrary_icon76@2x.png */,
+				66814DE6214971C100A82A4D /* tinylibrary_icon83.5@2x.png */,
+				66814DE8214971C100A82A4D /* tinylibrary_icon1024.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -160,10 +184,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				66814DD02146EB7E00A82A4D /* LaunchScreen.storyboard in Resources */,
-				66814DE12146F6D900A82A4D /* icon_180.png in Resources */,
+				66814DEE214971C100A82A4D /* tinylibrary_icon60@3x.png in Resources */,
+				66814DF72149725700A82A4D /* tinylibrary_icon29@2x.png in Resources */,
+				66814DF52149725700A82A4D /* tinylibrary_icon20@3x.png in Resources */,
+				66814DED214971C100A82A4D /* tinylibrary_icon1024.png in Resources */,
 				66814DCD2146EB7E00A82A4D /* Assets.xcassets in Resources */,
-				66814DDE2146F08A00A82A4D /* temp_icon_large.png in Resources */,
 				66814DCB2146EB7D00A82A4D /* Main.storyboard in Resources */,
+				66814DF42149725700A82A4D /* tinylibrary_icon20@2x.png in Resources */,
+				66814DEF214971C100A82A4D /* tinylibrary_icon60@2x.png in Resources */,
+				66814DEC214971C100A82A4D /* tinylibrary_icon76@2x.png in Resources */,
+				66814DF9214972A600A82A4D /* tinylibrary_icon40@2x.png in Resources */,
+				66814DEB214971C100A82A4D /* tinylibrary_icon83.5@2x.png in Resources */,
+				66814DF62149725700A82A4D /* tinylibrary_icon29@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +353,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AGPAHW954E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/tinylibrary/Frameworks",
+				);
 				INFOPLIST_FILE = tinylibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -338,6 +374,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AGPAHW954E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/tinylibrary/Frameworks",
+				);
 				INFOPLIST_FILE = tinylibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
