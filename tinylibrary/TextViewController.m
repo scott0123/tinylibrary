@@ -13,12 +13,18 @@
 @property (strong, nonatomic) IBOutlet UILabel *nightModeLabel;
 @property (strong, nonatomic) IBOutlet UITextView *contentView;
 
+@property (strong, nonatomic) IBOutlet UISlider *autoscrollSlider;
+@property (strong, nonatomic) NSTimer *autoscrollTimer;
+
 @end
 
 @implementation TextViewController
     
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
+    // dont sleep
+    [[UIApplication sharedApplication] setIdleTimerDisabled: YES];
     
     // Register for when this app will resign active ad go to the background
     [[NSNotificationCenter defaultCenter] addObserver: self
@@ -35,6 +41,11 @@
             // need to load the progress slightly after since the text takes a while to fully load
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [self loadProgress];
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                    // autoscroll feature
+                    self.autoscrollTimer = [NSTimer scheduledTimerWithTimeInterval:(0.03)
+                                                                            target:self selector:@selector(autoscrollTimerFired) userInfo:nil repeats:YES];
+                });
             });
         } else {
             // Make sure to handle the failed import appropriately, e.g., by presenting an error message to the user.
@@ -110,9 +121,19 @@
      */
 }
 
+- (void)autoscrollTimerFired {
+    
+    float scrollSpeed = self.autoscrollSlider.value;
+    scrollSpeed *= scrollSpeed;
+    CGPoint scrollPoint = self.contentView.contentOffset;
+    scrollPoint = CGPointMake(scrollPoint.x, scrollPoint.y + scrollSpeed);
+    [self.contentView setContentOffset:scrollPoint animated:NO];
+}
+
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     [self saveProgress];
+    [[UIApplication sharedApplication] setIdleTimerDisabled: NO];
 }
 
 // put the progress saving code here as well in case user accidentally force quits

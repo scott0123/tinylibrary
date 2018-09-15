@@ -88,7 +88,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgK-WI-FSe">
-                                <rect key="frame" x="328" y="631" width="47" height="36"/>
+                                <rect key="frame" x="328" y="632" width="47" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
@@ -102,34 +102,41 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Night mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vj-yC-wzt">
-                                <rect key="frame" x="142" y="639" width="90" height="21"/>
+                                <rect key="frame" x="57" y="641" width="90" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yJG-5A-EFs">
-                                <rect key="frame" x="240" y="634" width="51" height="31"/>
+                                <rect key="frame" x="0.0" y="636" width="51" height="31"/>
                                 <connections>
                                     <action selector="NightModeChanged:" destination="jHM-J9-tFx" eventType="valueChanged" id="sMa-3X-Klu"/>
                                 </connections>
                             </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="Fyx-Nd-FaI">
+                                <rect key="frame" x="178" y="635" width="118" height="31"/>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="God-hO-GYX" firstAttribute="bottom" secondItem="7vj-yC-wzt" secondAttribute="bottom" constant="7" id="4pj-MJ-OSQ"/>
-                            <constraint firstItem="VgK-WI-FSe" firstAttribute="top" secondItem="GxG-9y-gqy" secondAttribute="bottom" constant="-5" id="TFo-lO-J2R"/>
+                            <constraint firstAttribute="bottom" secondItem="VgK-WI-FSe" secondAttribute="bottom" constant="-1" id="1nW-bZ-fSo"/>
+                            <constraint firstItem="VgK-WI-FSe" firstAttribute="trailing" secondItem="God-hO-GYX" secondAttribute="trailing" id="3j5-Fv-djm"/>
+                            <constraint firstItem="yJG-5A-EFs" firstAttribute="leading" secondItem="God-hO-GYX" secondAttribute="leading" id="4cH-gE-p5B"/>
+                            <constraint firstItem="VgK-WI-FSe" firstAttribute="top" secondItem="GxG-9y-gqy" secondAttribute="bottom" constant="-4" id="6uK-cF-qND"/>
+                            <constraint firstItem="yJG-5A-EFs" firstAttribute="bottom" secondItem="God-hO-GYX" secondAttribute="bottom" id="9r4-AF-Du4"/>
+                            <constraint firstItem="7vj-yC-wzt" firstAttribute="centerY" secondItem="yJG-5A-EFs" secondAttribute="centerY" id="Elp-Su-pVA"/>
+                            <constraint firstItem="Fyx-Nd-FaI" firstAttribute="leading" secondItem="7vj-yC-wzt" secondAttribute="trailing" constant="33" id="UYb-JZ-fXD"/>
                             <constraint firstItem="GxG-9y-gqy" firstAttribute="top" secondItem="EcF-a5-TZC" secondAttribute="top" id="Wz5-fj-IZw"/>
-                            <constraint firstItem="VgK-WI-FSe" firstAttribute="trailing" secondItem="God-hO-GYX" secondAttribute="trailing" id="b9P-m8-zyU"/>
                             <constraint firstItem="GxG-9y-gqy" firstAttribute="trailing" secondItem="God-hO-GYX" secondAttribute="trailing" id="cJt-J5-brW"/>
-                            <constraint firstItem="yJG-5A-EFs" firstAttribute="centerY" secondItem="7vj-yC-wzt" secondAttribute="centerY" id="dS3-po-Lqb"/>
+                            <constraint firstItem="7vj-yC-wzt" firstAttribute="leading" secondItem="yJG-5A-EFs" secondAttribute="trailing" constant="8" id="dxG-j1-zDp"/>
                             <constraint firstItem="GxG-9y-gqy" firstAttribute="leading" secondItem="God-hO-GYX" secondAttribute="leading" id="o8E-8K-12K"/>
-                            <constraint firstItem="7vj-yC-wzt" firstAttribute="centerX" secondItem="EcF-a5-TZC" secondAttribute="centerX" id="pux-SB-HeD"/>
-                            <constraint firstItem="VgK-WI-FSe" firstAttribute="bottom" secondItem="God-hO-GYX" secondAttribute="bottom" id="qfG-XK-g1k"/>
-                            <constraint firstItem="yJG-5A-EFs" firstAttribute="leading" secondItem="7vj-yC-wzt" secondAttribute="trailing" constant="8" id="xzU-er-sjO"/>
+                            <constraint firstItem="VgK-WI-FSe" firstAttribute="leading" secondItem="Fyx-Nd-FaI" secondAttribute="trailing" constant="34" id="phN-MP-go5"/>
+                            <constraint firstItem="God-hO-GYX" firstAttribute="bottom" secondItem="Fyx-Nd-FaI" secondAttribute="bottom" constant="2" id="v1b-Bj-P0k"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="God-hO-GYX"/>
                     </view>
                     <connections>
+                        <outlet property="autoscrollSlider" destination="Fyx-Nd-FaI" id="rpU-Fm-G3Q"/>
                         <outlet property="contentView" destination="GxG-9y-gqy" id="4UI-N5-4E4"/>
                         <outlet property="nightModeLabel" destination="7vj-yC-wzt" id="URh-O8-Hee"/>
                     </connections>
