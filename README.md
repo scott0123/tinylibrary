@@ -19,7 +19,8 @@ tinylibrary is available for free in the app store.
 
 ## Formats
 
-tinylibrary currently supports text files with the ".txt" extension.
+tinylibrary currently supports text files with the `.txt` extension.
+
 Make sure you put this text file somewhere on your iCloud so you can find it.
 
 ## Other
