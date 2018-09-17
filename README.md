@@ -9,16 +9,12 @@ It currently supports Dark Mode, Autoscrolling, and automatic encoding detection
 tinylibrary is available for free in the app store.
 
 ## Features
-### Normal Mode
+### Normal & Dark Mode
 ![Normal Mode Image](./tinylibrary/Screenshots/iphone1S.PNG)
-
-### Dark Mode
 ![Dark Mode Image](./tinylibrary/Screenshots/iphone2S.PNG)
 
-### Autoscrolling
+### Autoscrolling & Encoding Detection
 ![Autoscrolling GIF](./tinylibrary/Screenshots/autoscroll.gif)
-
-### Encoding Detection
 ![Encoding Detection Image](./tinylibrary/Screenshots/iphone3S.PNG)
 
 ## Other
