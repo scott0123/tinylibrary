@@ -17,6 +17,11 @@ tinylibrary is available for free in the app store.
 ![Autoscrolling GIF](./tinylibrary/Screenshots/autoscroll.gif)
 ![Encoding Detection Image](./tinylibrary/Screenshots/iphone3S.PNG)
 
+## Formats
+
+tinylibrary currently supports text files with the ".txt" extension.
+Make sure you put this text file somewhere on your iCloud so you can find it.
+
 ## Other
 
 It aims to use the absolute minimum amount of power via efficient resource management to let you enjoy your reading experience for the longest possible time.
