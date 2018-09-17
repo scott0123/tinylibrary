@@ -4,17 +4,24 @@ tinylibrary™ is a simple EBook reader that is extremely lightweight and minima
 
 It currently supports Dark Mode, Autoscrolling, and automatic encoding detection.
 
-## Normal Mode
+## Download
 
+tinylibrary is available for free in the app store.
 
-## Dark Mode
+## Features
+### Normal Mode
+![Normal Mode Image](./tinylibrary/Screenshots/iphone1S.PNG)
 
+### Dark Mode
+![Dark Mode Image](./tinylibrary/Screenshots/iphone2S.PNG)
 
-## Autoscrolling
+### Autoscrolling
+![Autoscrolling GIF](./tinylibrary/Screenshots/autoscroll.gif)
 
+### Encoding Detection
+![Encoding Detection Image](./tinylibrary/Screenshots/iphone3S.PNG)
 
-## Encoding Detection
-
+## Other
 
 It aims to use the absolute minimum amount of power via efficient resource management to let you enjoy your reading experience for the longest possible time.
 
