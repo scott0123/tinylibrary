@@ -10,6 +10,7 @@
 #import "Document.h"
 #import "DocumentViewController.h"
 #import "TextViewController.h"
+#import "HTMLViewController.h"
 
 @interface DocumentBrowserViewController () <UIDocumentBrowserViewControllerDelegate>
 
@@ -76,8 +77,18 @@
         TextViewController *textViewController = [storyBoard instantiateViewControllerWithIdentifier:@"TextViewController"];
         textViewController.document = [[Document alloc] initWithFileURL:documentURL];
         [self presentViewController:textViewController animated:NO completion:nil];
+    } else if ([documentURL.pathExtension isEqual:@"html"]){
+        // IF HTML FILE
+        HTMLViewController *htmlViewController = [storyBoard instantiateViewControllerWithIdentifier:@"HTMLViewController"];
+        htmlViewController.document = [[Document alloc] initWithFileURL:documentURL];
+        [self presentViewController:htmlViewController animated:NO completion:nil];
+    }  else if ([documentURL.pathExtension isEqual:@"rtf"]){
+        // IF RTF FILE
+        TextViewController *textViewController = [storyBoard instantiateViewControllerWithIdentifier:@"TextViewController"];
+        textViewController.document = [[Document alloc] initWithFileURL:documentURL];
+        [self presentViewController:textViewController animated:NO completion:nil];
     } else {
-    // IF NOT TEXT FILE
+        // IF NOT TEXT FILE
         printf("Non-text extension: %s", [documentURL.pathExtension UTF8String]);
         DocumentViewController *documentViewController = [storyBoard instantiateViewControllerWithIdentifier:@"DocumentViewController"];
         documentViewController.document = [[Document alloc] initWithFileURL:documentURL];

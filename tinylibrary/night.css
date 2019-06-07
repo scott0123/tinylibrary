@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+}
+h1, h2, h3, h4, h5, h6, p, body
+{
+    color: white;
+    font: Helvetica;
+}
+h1 {
+    font-size:128px;
+}
+h2 {
+    font-size:108px;
+}
+h3 {
+    font-size:90px;
+}
+h4 {
+    font-size:72px;
+}
+h5 {
+    font-size:54px;
+}
+h6 {
+    font-size:36px;
+}
+
+p, body {
+    font-size:54px;
+}

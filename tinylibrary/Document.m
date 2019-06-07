@@ -32,6 +32,10 @@
         subdata = [contents subdataWithRange:NSMakeRange(0, subdata_max_range)];
         NSStringEncoding encoding = [NSString stringEncodingForData:subdata encodingOptions:nil convertedString:nil usedLossyConversion:0];
         self.contents = [[NSString alloc] initWithData:contents encoding:encoding];
+    } else if([typeName isEqual: @"public.html"]){
+        self.contents = [[NSString alloc] initWithData:contents encoding:NSUTF8StringEncoding];
+    } else if([typeName isEqual: @"public.rtf"]){
+        self.contents = [[NSString alloc] initWithData:contents encoding:NSUTF8StringEncoding];
     } else {
         printf("Unexpected type: %s\n", [typeName UTF8String]);
     }

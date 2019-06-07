@@ -9,10 +9,30 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>tinylibrarypreview.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>tinylibraryshare.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>66814DB92146EB7D00A82A4D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>66A0C0F82296FB0400BA9DE6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>66A0C10D2297079000BA9DE6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -10,6 +10,9 @@
 #import "DocumentBrowserViewController.h"
 #import "DocumentViewController.h"
 #import "Document.h"
+#import "HTMLViewController.h"
+
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUALTO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 
 @interface AppDelegate ()
 
@@ -20,9 +23,60 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self registerForRemoteNotifications];
     return YES;
 }
 
+- (void)registerForRemoteNotifications {
+    if(SYSTEM_VERSION_GREATER_THAN_OR_EQUALTO(@"10.0")){
+        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+        center.delegate = self;
+        [center requestAuthorizationWithOptions:(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge) completionHandler:^(BOOL granted, NSError * _Nullable error){
+            if(!error){
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [[UIApplication sharedApplication] registerForRemoteNotifications];
+                });
+            }
+        }];
+    }
+    else {
+        // Code for old versions
+        printf("This only works for iOS 10.0+\n");
+    }
+}
+
+// Called to let your app know which action was selected by the user for a given notification.
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)(void))completionHandler{
+    NSDictionary* userInfo = response.notification.request.content.userInfo;
+    NSLog(@"User Info : %@", userInfo);
+    NSString* fileName = userInfo[@"fileName"];
+    NSString* filePath = userInfo[@"filePath"];
+    if(fileName.length != 0 && filePath.length != 0){
+        // hopefully they are valid
+        NSString* localPath = [self moveFile:fileName ToLocalFromShared:filePath];
+        // present the VC
+        UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        HTMLViewController *htmlViewController = [storyBoard instantiateViewControllerWithIdentifier:@"HTMLViewController"];
+        NSURL* localURL = [NSURL fileURLWithPath:localPath];
+        htmlViewController.document = [[Document alloc] initWithFileURL:localURL];
+        #define ROOTVIEW [[[UIApplication sharedApplication] keyWindow] rootViewController]
+        [ROOTVIEW presentViewController:htmlViewController animated:NO completion:nil];
+    }
+    completionHandler();
+}
+
+// returns local path that we saved to
+- (NSString*) moveFile:(NSString*)fileName ToLocalFromShared:(NSString*)sharedPath{
+    // get local documents directory
+    NSArray* paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString* documentsDirectory = [paths objectAtIndex:0];
+    NSString* localPath = [documentsDirectory stringByAppendingPathComponent:fileName];
+    // move the file
+    NSFileManager* fileManager = [NSFileManager defaultManager];
+    [fileManager moveItemAtPath:sharedPath toPath:localPath error:nil];
+    return localPath;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

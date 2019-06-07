@@ -26,7 +26,39 @@
 		66814DF62149725700A82A4D /* tinylibrary_icon29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66814DF22149725600A82A4D /* tinylibrary_icon29@3x.png */; };
 		66814DF72149725700A82A4D /* tinylibrary_icon29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66814DF32149725600A82A4D /* tinylibrary_icon29@2x.png */; };
 		66814DF9214972A600A82A4D /* tinylibrary_icon40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66814DF8214972A600A82A4D /* tinylibrary_icon40@2x.png */; };
+		66A0C0FD2296FB0400BA9DE6 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A0C0FC2296FB0400BA9DE6 /* ShareViewController.m */; };
+		66A0C1002296FB0400BA9DE6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66A0C0FE2296FB0400BA9DE6 /* MainInterface.storyboard */; };
+		66A0C1042296FB0400BA9DE6 /* tinylibraryshare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 66A0C0F92296FB0400BA9DE6 /* tinylibraryshare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		66A1E49922A911D800169302 /* HTMLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66A1E49822A911D800169302 /* HTMLViewController.m */; };
+		66A1E49B22A9183F00169302 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66A1E49A22A9183F00169302 /* WebKit.framework */; };
+		66A1E49F22A93EFC00169302 /* sharePreprocessingJS.js in Resources */ = {isa = PBXBuildFile; fileRef = 66A1E49E22A93EFB00169302 /* sharePreprocessingJS.js */; };
+		66DCD85722AA4A8100B6B8D0 /* day.css in Resources */ = {isa = PBXBuildFile; fileRef = 66DCD85522AA4A8100B6B8D0 /* day.css */; };
+		66DCD85822AA4A8100B6B8D0 /* night.css in Resources */ = {isa = PBXBuildFile; fileRef = 66DCD85622AA4A8100B6B8D0 /* night.css */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66A0C1022296FB0400BA9DE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 66814DB22146EB7D00A82A4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66A0C0F82296FB0400BA9DE6;
+			remoteInfo = tinylibraryshare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		66A0C1082296FB0400BA9DE6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				66A0C1042296FB0400BA9DE6 /* tinylibraryshare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		66814DBA2146EB7D00A82A4D /* tinylibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tinylibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,7 +76,6 @@
 		66814DD12146EB7E00A82A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66814DD22146EB7E00A82A4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66814DE22148ACC000A82A4D /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
-		66814DE32148ACC000A82A4D /* DocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentViewController.h; sourceTree = "<group>"; };
 		66814DE52148ACC900A82A4D /* TextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
 		66814DE6214971C100A82A4D /* tinylibrary_icon83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tinylibrary_icon83.5@2x.png"; sourceTree = "<group>"; };
 		66814DE7214971C100A82A4D /* tinylibrary_icon76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tinylibrary_icon76@2x.png"; sourceTree = "<group>"; };
@@ -56,10 +87,32 @@
 		66814DF22149725600A82A4D /* tinylibrary_icon29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tinylibrary_icon29@3x.png"; sourceTree = "<group>"; };
 		66814DF32149725600A82A4D /* tinylibrary_icon29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tinylibrary_icon29@2x.png"; sourceTree = "<group>"; };
 		66814DF8214972A600A82A4D /* tinylibrary_icon40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tinylibrary_icon40@2x.png"; sourceTree = "<group>"; };
+		66A0C0F92296FB0400BA9DE6 /* tinylibraryshare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = tinylibraryshare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		66A0C0FB2296FB0400BA9DE6 /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		66A0C0FC2296FB0400BA9DE6 /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		66A0C0FF2296FB0400BA9DE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		66A0C1012296FB0400BA9DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66A0C1102297079000BA9DE6 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		66A1E49722A911D800169302 /* HTMLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMLViewController.h; sourceTree = "<group>"; };
+		66A1E49822A911D800169302 /* HTMLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTMLViewController.m; sourceTree = "<group>"; };
+		66A1E49A22A9183F00169302 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		66A1E49E22A93EFB00169302 /* sharePreprocessingJS.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = sharePreprocessingJS.js; sourceTree = "<group>"; };
+		66A1E4A022A963AC00169302 /* tinylibrary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tinylibrary.entitlements; sourceTree = "<group>"; };
+		66A1E4A122A968A300169302 /* tinylibraryshare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tinylibraryshare.entitlements; sourceTree = "<group>"; };
+		66DCD85522AA4A8100B6B8D0 /* day.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = day.css; sourceTree = "<group>"; };
+		66DCD85622AA4A8100B6B8D0 /* night.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = night.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		66814DB72146EB7D00A82A4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66A1E49B22A9183F00169302 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66A0C0F62296FB0400BA9DE6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				66814DBC2146EB7D00A82A4D /* tinylibrary */,
+				66A0C0FA2296FB0400BA9DE6 /* tinylibraryshare */,
+				66A0C10F2297079000BA9DE6 /* Frameworks */,
 				66814DBB2146EB7D00A82A4D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				66814DBA2146EB7D00A82A4D /* tinylibrary.app */,
+				66A0C0F92296FB0400BA9DE6 /* tinylibraryshare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,6 +144,7 @@
 		66814DBC2146EB7D00A82A4D /* tinylibrary */ = {
 			isa = PBXGroup;
 			children = (
+				66A1E4A022A963AC00169302 /* tinylibrary.entitlements */,
 				66814DBD2146EB7D00A82A4D /* AppDelegate.h */,
 				66814DBE2146EB7D00A82A4D /* AppDelegate.m */,
 				66814DC02146EB7D00A82A4D /* DocumentBrowserViewController.h */,
@@ -96,9 +153,12 @@
 				66814DC42146EB7D00A82A4D /* DocumentViewController.m */,
 				66814DC62146EB7D00A82A4D /* Document.h */,
 				66814DC72146EB7D00A82A4D /* Document.m */,
-				66814DE32148ACC000A82A4D /* DocumentViewController.h */,
 				66814DE52148ACC900A82A4D /* TextViewController.h */,
 				66814DE22148ACC000A82A4D /* TextViewController.m */,
+				66A1E49722A911D800169302 /* HTMLViewController.h */,
+				66A1E49822A911D800169302 /* HTMLViewController.m */,
+				66DCD85522AA4A8100B6B8D0 /* day.css */,
+				66DCD85622AA4A8100B6B8D0 /* night.css */,
 				66814DC92146EB7D00A82A4D /* Main.storyboard */,
 				66814DCC2146EB7E00A82A4D /* Assets.xcassets */,
 				66814DCE2146EB7E00A82A4D /* LaunchScreen.storyboard */,
@@ -126,6 +186,28 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		66A0C0FA2296FB0400BA9DE6 /* tinylibraryshare */ = {
+			isa = PBXGroup;
+			children = (
+				66A1E4A122A968A300169302 /* tinylibraryshare.entitlements */,
+				66A1E49E22A93EFB00169302 /* sharePreprocessingJS.js */,
+				66A0C0FB2296FB0400BA9DE6 /* ShareViewController.h */,
+				66A0C0FC2296FB0400BA9DE6 /* ShareViewController.m */,
+				66A0C0FE2296FB0400BA9DE6 /* MainInterface.storyboard */,
+				66A0C1012296FB0400BA9DE6 /* Info.plist */,
+			);
+			path = tinylibraryshare;
+			sourceTree = "<group>";
+		};
+		66A0C10F2297079000BA9DE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66A1E49A22A9183F00169302 /* WebKit.framework */,
+				66A0C1102297079000BA9DE6 /* QuickLook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,15 +218,34 @@
 				66814DB62146EB7D00A82A4D /* Sources */,
 				66814DB72146EB7D00A82A4D /* Frameworks */,
 				66814DB82146EB7D00A82A4D /* Resources */,
+				66A0C1082296FB0400BA9DE6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				66A0C1032296FB0400BA9DE6 /* PBXTargetDependency */,
 			);
 			name = tinylibrary;
 			productName = tinylibrary;
 			productReference = 66814DBA2146EB7D00A82A4D /* tinylibrary.app */;
 			productType = "com.apple.product-type.application";
+		};
+		66A0C0F82296FB0400BA9DE6 /* tinylibraryshare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66A0C1072296FB0400BA9DE6 /* Build configuration list for PBXNativeTarget "tinylibraryshare" */;
+			buildPhases = (
+				66A0C0F52296FB0400BA9DE6 /* Sources */,
+				66A0C0F62296FB0400BA9DE6 /* Frameworks */,
+				66A0C0F72296FB0400BA9DE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tinylibraryshare;
+			productName = tinylibraryshare;
+			productReference = 66A0C0F92296FB0400BA9DE6 /* tinylibraryshare.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -157,6 +258,22 @@
 				TargetAttributes = {
 					66814DB92146EB7D00A82A4D = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					66A0C0F82296FB0400BA9DE6 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -174,6 +291,7 @@
 			projectRoot = "";
 			targets = (
 				66814DB92146EB7D00A82A4D /* tinylibrary */,
+				66A0C0F82296FB0400BA9DE6 /* tinylibraryshare */,
 			);
 		};
 /* End PBXProject section */
@@ -183,8 +301,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66DCD85722AA4A8100B6B8D0 /* day.css in Resources */,
 				66814DD02146EB7E00A82A4D /* LaunchScreen.storyboard in Resources */,
 				66814DEE214971C100A82A4D /* tinylibrary_icon60@3x.png in Resources */,
+				66DCD85822AA4A8100B6B8D0 /* night.css in Resources */,
 				66814DF72149725700A82A4D /* tinylibrary_icon29@2x.png in Resources */,
 				66814DF52149725700A82A4D /* tinylibrary_icon20@3x.png in Resources */,
 				66814DED214971C100A82A4D /* tinylibrary_icon1024.png in Resources */,
@@ -199,6 +319,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		66A0C0F72296FB0400BA9DE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66A1E49F22A93EFC00169302 /* sharePreprocessingJS.js in Resources */,
+				66A0C1002296FB0400BA9DE6 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -210,12 +339,29 @@
 				66814DC82146EB7D00A82A4D /* Document.m in Sources */,
 				66814DC22146EB7D00A82A4D /* DocumentBrowserViewController.m in Sources */,
 				66814DE42148ACC000A82A4D /* TextViewController.m in Sources */,
+				66A1E49922A911D800169302 /* HTMLViewController.m in Sources */,
 				66814DC52146EB7D00A82A4D /* DocumentViewController.m in Sources */,
 				66814DBF2146EB7D00A82A4D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		66A0C0F52296FB0400BA9DE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66A0C0FD2296FB0400BA9DE6 /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		66A0C1032296FB0400BA9DE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66A0C0F82296FB0400BA9DE6 /* tinylibraryshare */;
+			targetProxy = 66A0C1022296FB0400BA9DE6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		66814DC92146EB7D00A82A4D /* Main.storyboard */ = {
@@ -232,6 +378,14 @@
 				66814DCF2146EB7E00A82A4D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		66A0C0FE2296FB0400BA9DE6 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66A0C0FF2296FB0400BA9DE6 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -351,12 +505,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = tinylibrary/tinylibrary.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AGPAHW954E;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/tinylibrary/Frameworks",
-				);
 				INFOPLIST_FILE = tinylibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -372,12 +523,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = tinylibrary/tinylibrary.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AGPAHW954E;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/tinylibrary/Frameworks",
-				);
 				INFOPLIST_FILE = tinylibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -385,6 +533,49 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.scott-liu.tinylibrary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		66A0C1052296FB0400BA9DE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = tinylibraryshare/tinylibraryshare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AGPAHW954E;
+				INFOPLIST_FILE = tinylibraryshare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scott-liu.tinylibrary.tinylibraryshare";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66A0C1062296FB0400BA9DE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = tinylibraryshare/tinylibraryshare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AGPAHW954E;
+				INFOPLIST_FILE = tinylibraryshare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scott-liu.tinylibrary.tinylibraryshare";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -406,6 +597,15 @@
 			buildConfigurations = (
 				66814DD72146EB7E00A82A4D /* Debug */,
 				66814DD82146EB7E00A82A4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66A0C1072296FB0400BA9DE6 /* Build configuration list for PBXNativeTarget "tinylibraryshare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66A0C1052296FB0400BA9DE6 /* Debug */,
+				66A0C1062296FB0400BA9DE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

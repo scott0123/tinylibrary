@@ -26,7 +26,7 @@
     // dont sleep
     [[UIApplication sharedApplication] setIdleTimerDisabled: YES];
     
-    // Register for when this app will resign active ad go to the background
+    // Register for when this app will resign active and go to the background
     [[NSNotificationCenter defaultCenter] addObserver: self
                                              selector: @selector(viewWillResignActive)
                                                  name: UIApplicationWillResignActiveNotification
